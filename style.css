@@ -179,9 +179,6 @@ footer{
     top: 40vh;
     left: 10vh;
   }
-  .landingPage{
-    height: 100vh;
-  }
 }
 
 /* Flex: Screen < 650 px */
