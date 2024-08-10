@@ -134,6 +134,11 @@ footer{
   margin: 2vh;
 }
 
+#whatsapp{
+  font-size: 1rem;
+  color:white;
+}
+
 /* Navbar */
 
 .owner{
