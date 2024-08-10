@@ -77,25 +77,19 @@ p{
 /* Benificios */
 
 .benificios{
+  margin-top: 5vh;
   display:flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vh;
 }
 
-.benificios-Parent{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.benefit{
-  height: 10vh;
+.benifit{
   width: 50vh;
+  background-color: rgb(245, 245, 220);
+  padding: 10px;
+  margin: 10px;
   text-align: center;
-  margin: 10px 10px;
-  border-radius: 10px;
-  background-color: 	#F5F5DC;
+  border-radius: 5px;
 }
 
 /* Comprar */
@@ -106,6 +100,11 @@ p{
   align-items: center;
   flex-direction: column;
   min-height: 70vh;
+}
+
+.comprar p {
+  text-align: center;
+  padding: 10px 10px;
 }
 
 .shop-button{
@@ -124,14 +123,20 @@ footer{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 150px;
   background-color: #2c2929;
   margin-top: 5vh;
 }
 
 .footerBox{
   color: #ddd;
-  margin: 2vh;
+  height: 80px;
+  width: 110px;
+  margin: 5px 5px;
+}
+
+.footerBox:first-of-type {
+  width: 180px;
 }
 
 #whatsapp{
