@@ -122,21 +122,35 @@ p{
 
 /* Footer */
 
+.whatsapp{
+  background-color: none;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.whatsapp i{
+  font-size: 3rem;
+  color:#2c2929;
+  position: relative;
+  right: 100px;
+  bottom: 50px;
+}
+
 footer{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 100px;
   background-color: #2c2929;
-  margin-top: 5vh;
+  margin: 5px;
 }
 
 .footerBox{
   color: #ddd;
   height: 80px;
   width: 100px;
-  margin: 5px 5px;
+  margin: 0px 5px 0px;
 }
 
 .footerBox:first-of-type {
@@ -144,7 +158,7 @@ footer{
 }
 
 #whatsapp{
-  font-size: 1rem;
+  font-size: 1.2rem;
   color:white;
 }
 
@@ -181,7 +195,7 @@ footer{
   display: none;
 }
 
-/* Flex: Screen < 950 px */
+/* Flex: Screen < 1050px px */
 
 @media (max-width: 1050px) {
   /* Um Richtung der Elemente zu ändern, wird Flex-Direction wird von waagrecht auf senkrecht gestellt*/
@@ -217,10 +231,23 @@ footer{
   } 
   .headline {
     font-size: 5rem;
-    top: 30vh;
-    left: 10vh;
+    top: 40vh;
+    left: 5vh;
   }
   .benifit{
     width: 320px;
+  }
+  .whatsapp{
+    background-color: #2c2929;
+    justify-content: center;
+    align-items: center; 
+    height: 100px;
+    margin: 5px;
+  }
+  .whatsapp i {
+    color:white;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
   }
 }
