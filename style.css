@@ -236,7 +236,11 @@ footer{
   .navbarLinks.active{
     display: flex;
     margin-top: 20px;
-  } 
+  }
+  .landingPage{
+    height: 90vh;
+  }
+  
   .headline {
     font-size: 5rem;
     top: 40vh;
