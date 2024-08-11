@@ -30,7 +30,7 @@ p{
   background-image: url('./images/hintergrund.jpg');
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 75vh;
 }
 
 .headline {
@@ -39,7 +39,17 @@ p{
   font-weight: 1000;
   position: relative;
   width: 350px;
-  top: 30vh;
+  top: 35vh;
+  left: 30vh;
+}
+
+.subtitle {
+  color: #eadfdf;  
+  font-size: 3rem;
+  font-weight: 100;
+  position: relative;
+  width: 500px;
+  top: 32vh;
   left: 30vh;
 }
 
@@ -212,7 +222,11 @@ footer{
   }
   .headline{
     top: 30vh;
-    left: 15vh;
+    left: 10vh;
+  }
+  .subtitle{
+    top: 30vh;
+    left: 10vh;
   }
 }
 
@@ -237,13 +251,15 @@ footer{
     display: flex;
     margin-top: 20px;
   }
-  .landingPage{
-    height: 80vh;
-  }
   .headline {
     font-size: 5rem;
     top: 40vh;
     left: 2vh;
+  }
+  .subtitle{
+    font-size: 2rem;
+    top:40vh;
+    left:2.5vh;
   }
   .benifit{
     width: 320px;
