@@ -213,6 +213,20 @@ footer{
   display: none;
 }
 
+/* Flex: Screen < 1350px px */
+
+@media (max-width: 1350px) {
+  /* Um Richtung der Elemente zu ändern, wird Flex-Direction wird von waagrecht auf senkrecht gestellt*/
+  .headline{
+    top: 35vh;
+    left: 15vh;
+  }
+  .subtitle{
+    top: 32vh;
+    left: 15vh;
+  }
+}
+
 /* Flex: Screen < 1050px px */
 
 @media (max-width: 1050px) {
@@ -221,12 +235,12 @@ footer{
     flex-direction: column;
   }
   .headline{
-    top: 30vh;
-    left: 10vh;
+    top: 35vh;
+    left: 7vh;
   }
   .subtitle{
-    top: 30vh;
-    left: 10vh;
+    top: 32vh;
+    left: 7vh;
   }
 }
 
@@ -258,8 +272,12 @@ footer{
   }
   .subtitle{
     font-size: 2rem;
-    top:40vh;
+    top: 40vh;
     left:2.5vh;
+  }
+  .introBox{
+    width: 75%;
+    font-size: 1.4rem;
   }
   .benifit{
     width: 320px;
