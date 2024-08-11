@@ -70,8 +70,8 @@ p{
 }
 
 .categoryChild img{
-  height: 50vh;
-  width: 50vh;
+  width: 100%;
+  height: auto;
 }
 
 /* Benificios */
@@ -135,7 +135,7 @@ footer{
 .footerBox{
   color: #ddd;
   height: 80px;
-  width: 110px;
+  width: 100px;
   margin: 5px 5px;
 }
 
@@ -183,15 +183,14 @@ footer{
 
 /* Flex: Screen < 950 px */
 
-@media (max-width: 950px) {
+@media (max-width: 1050px) {
   /* Um Richtung der Elemente zu ändern, wird Flex-Direction wird von waagrecht auf senkrecht gestellt*/
   .categoryParent{
     flex-direction: column;
   }
   .headline{
-    font-size: 3rem;
-    top: 40vh;
-    left: 10vh;
+    top: 30vh;
+    left: 15vh;
   }
 }
 
@@ -215,10 +214,11 @@ footer{
   .navbarLinks.active{
     display: flex;
     margin-top: 20px;
-  }
-  .categoryChild img{
-    height: 30vh;
-    width: 30vh;
+  } 
+  .headline {
+    font-size: 5rem;
+    top: 30vh;
+    left: 10vh;
   }
   .benifit{
     width: 320px;
