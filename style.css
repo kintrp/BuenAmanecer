@@ -83,12 +83,16 @@ p{
   align-items: center;
 }
 
-.benifit{
-  width: 50vh;
-  background-color: rgb(245, 245, 220);
-  padding: 10px;
-  margin: 10px;
+.benificios h2{
   text-align: center;
+}
+
+.benifit{
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(245, 245, 220);
   border-radius: 5px;
 }
 
@@ -215,5 +219,8 @@ footer{
   .categoryChild img{
     height: 30vh;
     width: 30vh;
+  }
+  .benifit{
+    width: 320px;
   }
 }
