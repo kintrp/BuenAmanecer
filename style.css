@@ -242,19 +242,10 @@ footer{
 }
 
 .form-group input{
-  width: 45%;
+  width: 90%;
   border-radius: 4px;
   padding: 10px;
   margin: 5px;
-}
-
-.form-group textarea {
-  width: 82%;
-  border-radius: 4px;
-}
-
-.form-group textarea{
-  resize: vertical;
 }
 
 .subtmitDIV{
@@ -271,11 +262,23 @@ footer{
   border-radius: 10px;
 }
 
-#messageBox{
-  padding: 50px;
+#pedido-Box{
   text-align: center;
 }
 
+.info-Pedido textarea {
+margin: 0px 0px 50px;
+border-radius: 4px;
+width: 100%;
+}
+
+/*
+.form-group textarea {
+  margin: 0px 0px 50px;
+  border-radius: 4px;
+  width: 100%;
+}
+*/
 
 /* nosotros */
 
@@ -296,14 +299,15 @@ footer{
   grid-template-columns: 40% 60%;
 }
 
-.nosotrosText p{
-  padding: 50px;
+.nosotrosFoto{
+  text-align: center; 
+  padding: 20px; 
 }
 
-.whoWeAre img{
-  height: 350px;
-  width: 450px;
-  padding: 5px 10px 5px;
+.nosotrosFoto img{
+  max-width: 100%; 
+  height: auto; 
+  margin: 0 auto;
 }
 
 .valores{
@@ -381,10 +385,12 @@ footer{
     left: 15vh;
   }
   .nosotrosBox{
-    grid-template-columns: 1fr; 
+    display: flex;
+    flex-direction: column; 
   }
   .valores{
     flex-direction: column;
+    align-items: center;
   }
   .info-Client{
     grid-template-columns: 1fr; 

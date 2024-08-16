@@ -32,7 +32,9 @@
     <div class="pedidos">
         <p>ingresar datos</p>    
         <form action="submit_form.php" method="post" class="contact-form">
+
             <div class="info-Client">
+
                 <div class="clientDetails">
                     <div class="form-group">
                         <label for="firstname">nombre</label><br>
@@ -55,13 +57,15 @@
                 </div>
             </div>
                     
-                <div class="form-group" id="messageBox">
-                    <label for="message">tu pedido</label><br>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <div class="subtmitDIV">
-                    <button class="pedido-button" type="submit">enviar</button>
-                </div>
+            <div class="info-Pedido" id="pedido-Box">
+                <label for="message">tu pedido</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="subtmitDIV">
+                <button class="pedido-button" type="submit">enviar</button>
+            </div>
+
         </form>
     </div>
     
