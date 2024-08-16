@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://kit.fontawesome.com/47eba03b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="toggleButton">&#9776;</div>
+        <div class="navbarLinks">
+            <a href="index.html">home</a>
+            <a href="shop.html">shop</a>
+            <a href="pedidos.html">pedidos</a>
+            <a href="nosotros.html">nosotros</a>
+        </div>
+        <div class="owner">Ariel Beron</div>
+    </div>
+
+    <div class="landingPage">
+        <div class="headline">Pedidos</div>
+    </div>
+
+    <div class ="intro">
+        <h2>Mandanos un mail</h2>
+    </div>
+
+    <div class="pedidos">
+        <p>Ingresar datos</p>    
+        <form action="submit_form.php" method="post" class="contact-form">
+            <div class="info-Client">
+                <div class="clientDetails">
+                    <div class="form-group">
+                        <label for="firstname">nombre:</label><br>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">apellido:</label><br>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                </div>
+                <div class ="InfoX">
+                    <div class="form-group">
+                        <label for="email">email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">movil:</label><br>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+            </div>
+                    
+                <div class="form-group">
+                    <label for="message">tu pedido:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+            <button class="pedido-button" type="submit">enviar</button>
+        </form>
+    </div>
+    
+    <div class ="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <footer>
+        <div class ="footerBox 1"> 
+            <i class="fa-solid fa-location-dot"></i><br>Av. Cap. Fernando Casado<br>4300 La Banda
+        </div> 
+        <div class ="footerBox 2"> 
+            <i class="fa-regular fa-clock"></i> <br>Lunes a viernes: <br>9 a 12 
+        </div>
+        <div class ="footerBox 3"> 
+            <i class="fa-solid fa-phone"></i> <br> </i>telefono <br>(0)385 147396
+        </div>
+    </footer>
+   
+    <script src="app.js"></script>
+</body>
+</html>

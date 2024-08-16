@@ -21,7 +21,7 @@ h3{
 }
 
 p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* LandingPage */
@@ -180,6 +180,152 @@ footer{
   color:white;
 }
 
+/* Shop */
+
+.select-button{
+  background-color: #29a834;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color:white;
+  margin: 4px 2px;
+  border-radius: 10px;
+}
+
+.select-button:first-of-type{
+  background-color: rgb(245, 245, 220);
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: #2c2929;
+  margin: 4px 2px;
+  border-radius: 10px;
+}
+
+.productos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+
+.product{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.product img{
+  height: 300px;
+  width: 300px;
+}
+
+/* pedidos */
+
+.pedidos p{
+  text-align: center;
+}
+
+.info-Client{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
+.contact-form{
+  width: 70%;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: rgb(245, 245, 220);
+}
+
+.form-group input{
+  width: 300px;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.form-group textarea {
+  width: 85%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-group textarea{
+  resize: vertical;
+}
+
+.pedido-button {
+  background-color: #29a834;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* nosotros */
+
+.nosotros{
+  margin: 0px 100px;
+}
+
+.nosotros p {
+  text-align: center;
+}
+
+.nosotros h2{
+  text-align: center;
+}
+
+.nosotrosBox{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.nosotrosText p{
+  padding: 50px;
+}
+
+.whoWeAre img{
+  height: 350px;
+  width: 450px;
+  padding: 5px 10px 5px;
+}
+
+.valores{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.valor{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(245, 245, 220);
+  border-radius: 4px;
+  text-align: center;
+  display: grid;
+  place-items: center; 
+  margin: 10px;
+}
+
+.location{
+  width: 100%;
+}
+
+.location h2{
+  text-align: center;
+}
+
+.location p{
+  text-align: center;
+}
+
 /* Navbar */
 
 .owner{
@@ -224,6 +370,12 @@ footer{
   .subtitle{
     top: 32vh;
     left: 15vh;
+  }
+  .nosotrosBox{
+    grid-template-columns: 1fr; 
+  }
+  .valores{
+    flex-direction: column;
   }
 }
 
@@ -294,5 +446,8 @@ footer{
     position: relative;
     right: 0px;
     bottom: 0px;
+  }
+  .productos{
+    flex-direction: column;
   }
 }

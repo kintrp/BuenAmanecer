@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://kit.fontawesome.com/47eba03b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="toggleButton">&#9776;</div>
+        <div class="navbarLinks">
+            <a href="index.html">home</a>
+            <a href="shop.html">shop</a>
+            <a href="pedidos.html">pedidos</a>
+            <a href="nosotros.html">nosotros</a>
+        </div>
+        <div class="owner">Ariel Beron</div>
+    </div>
+
+    <div class="landingPage">
+        <div class="headline">Shop</div>
+    </div>
+
+    <div class ="intro">
+        <h2>Nuestros Productos</h2>
+        <div class="filter">
+            <button class ="select-button" onclick="filterProducts('alle')">todo</button>
+            <button class ="select-button" onclick="filterProducts('pflanzen')">plantas</button>
+            <button class ="select-button" onclick="filterProducts('bäume')">arboles</button>
+            <button class ="select-button" onclick="filterProducts('Kakteen')">cactus</button>
+          </div>
+    </div>
+    
+    <div class ="productos">
+        <div class ="product bäume">
+            <img src="images/tree.jpg" alt="Pflanze 3">
+            <p>Arbol A</p>
+        </div>
+        <div class ="product bäume">
+            <img src="images/tree1.jpg" alt="Pflanze 3">
+            <p>Arbol B</p>
+        </div>
+        <div class ="product bäume">
+            <img src="images/tree2.jpg" alt="Pflanze 3">
+            <p>Arbol C</p>
+        </div>
+        <div class ="product Kakteen">
+            <img src="images/cactus1.jpg" alt="Pflanze 3">
+            <p>cactus A</p>
+        </div>
+        <div class ="product Kakteen">
+            <img src="images/cactus2.jpg" alt="Pflanze 3">
+            <p>cactus B</p>
+        </div>
+        <div class ="product Kakteen">
+            <img src="images/cactus3.jpg" alt="Pflanze 3">
+            <p>cactus C</p>
+        </div>
+        <div class ="product pflanzen">
+            <img src="images/plant1.jpg" alt="Pflanze 3">
+            <p>Planta A</p>
+        </div>
+        <div class ="product pflanzen">
+            <img src="images/plant2.jpg" alt="Pflanze 3">
+            <p>Planta B</p>
+        </div>
+        <div class ="product pflanzen">
+            <img src="images/plant3.jpg" alt="Pflanze 3">
+            <p>Planta C</p>
+        </div>
+    </div>
+
+    <div class ="comprar">
+        <h2>Aqui vamos</h2>
+        <p>Haz tu pedido aqui:</p>    
+        <button onclick="location.href='pedidos.html'"class="shop-button">Pedido</button>
+    </div>
+    
+    <div class ="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <footer>
+        <div class ="footerBox 1"> 
+            <i class="fa-solid fa-location-dot"></i><br>Av. Cap. Fernando Casado<br>4300 La Banda
+        </div> 
+        <div class ="footerBox 2"> 
+            <i class="fa-regular fa-clock"></i> <br>Lunes a viernes: <br>9 a 12 
+        </div>
+        <div class ="footerBox 3"> 
+            <i class="fa-solid fa-phone"></i> <br> </i>telefono <br>(0)385 147396
+        </div>
+    </footer>
+   
+    <script src="app.js"></script>
+</body>
+</html>
