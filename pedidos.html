@@ -30,37 +30,38 @@
     </div>
 
     <div class="pedidos">
-        <p>Ingresar datos</p>    
+        <p>ingresar datos</p>    
         <form action="submit_form.php" method="post" class="contact-form">
             <div class="info-Client">
                 <div class="clientDetails">
                     <div class="form-group">
-                        <label for="firstname">nombre:</label><br>
+                        <label for="firstname">nombre</label><br>
                         <input type="text" id="firstname" name="firstname" required>
                     </div>
                     <div class="form-group">
-                        <label for="lastname">apellido:</label><br>
+                        <label for="lastname">apellido</label><br>
                         <input type="text" id="lastname" name="lastname" required>
                     </div>
                 </div>
                 <div class ="InfoX">
                     <div class="form-group">
-                        <label for="email">email:</label><br>
+                        <label for="email">email</label><br>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">movil:</label><br>
+                        <label for="phone">movil</label><br>
                         <input type="tel" id="phone" name="phone" required>
                     </div>
                 </div>
             </div>
                     
-                <div class="form-group">
-                    <label for="message">tu pedido:</label><br>
+                <div class="form-group" id="messageBox">
+                    <label for="message">tu pedido</label><br>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-
-            <button class="pedido-button" type="submit">enviar</button>
+                <div class="subtmitDIV">
+                    <button class="pedido-button" type="submit">enviar</button>
+                </div>
         </form>
     </div>
     

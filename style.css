@@ -242,31 +242,40 @@ footer{
 }
 
 .form-group input{
-  width: 300px;
+  width: 45%;
   border-radius: 4px;
   padding: 10px;
   margin: 5px;
 }
 
 .form-group textarea {
-  width: 85%;
+  width: 82%;
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
 }
 
 .form-group textarea{
   resize: vertical;
 }
 
-.pedido-button {
+.subtmitDIV{
+  display: grid;
+  justify-content: center;
+}
+
+.pedido-button{
   background-color: #29a834;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 4px;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color:white;
+  margin: 4px 2px;
+  border-radius: 10px;
+}
+
+#messageBox{
+  padding: 50px;
   text-align: center;
 }
+
 
 /* nosotros */
 
@@ -376,6 +385,9 @@ footer{
   }
   .valores{
     flex-direction: column;
+  }
+  .info-Client{
+    grid-template-columns: 1fr; 
   }
 }
 
