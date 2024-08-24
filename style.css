@@ -5,7 +5,7 @@ html{
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 1000;
   color: #eadfdf; 
 }
@@ -47,15 +47,14 @@ p1{
   margin:0px;
   position: relative;
   top: 20vh;
-  left: 30vh;
+  left: 35vh;
 }
 
 .landingPage h2 {
   margin: 0px;
-  width: 450px;
   position: relative;
-  top: 25vh;
-  left: 130vh;
+  top: 20vh;
+  left: 120vh;
 }
 
 /* Intro */
@@ -80,6 +79,10 @@ p1{
   flex-direction: column;
   align-items: center;
   margin-top: 5vh;
+}
+
+.categories p {
+  text-align: center;
 }
 
 .categoryParent{
@@ -358,7 +361,7 @@ footer{
   color: #9a9696;
   position: absolute;
   right: 4vh;
-  top: 4vh;
+  top: 3.2vh;
 }
 
 .navbar{
@@ -388,9 +391,9 @@ footer{
 @media (max-width: 1350px) {
   /* Um Richtung der Elemente zu ändern, wird Flex-Direction wird von waagrecht auf senkrecht gestellt*/
   .landingPage h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
     top: 20vh;
-    left: 25vh;
+    left: 40vh;
   }
   .landingPage h2{
     font-size: 2.5rem;
@@ -418,9 +421,9 @@ footer{
     flex-direction: column;
   }
   .landingPage h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
     top: 20vh;
-    left: 25vh;
+    left: 20vh;
   }
   .landingPage h2{
     font-size: 2rem;
@@ -454,14 +457,14 @@ footer{
     margin-top: 20px;
   }
   .landingPage h1 {
-    font-size: 3.5rem;
-    top: 5vh;
-    left: 10vh;
+    font-size: 3rem;
+    top: 20vh;
+    left: 15vh;
   }
   .landingPage h2{
-    font-size: 1.5rem;
-    top: 5vh;
-    left: 35vh;
+    font-size: 2rem;
+    top: 20vh;
+    left: 45vh;
   }
   .introBox{
     width: 75%;
@@ -472,5 +475,22 @@ footer{
   }
   .productos{
     flex-direction: column;
+  }
+  .owner{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Hamburger-Menü eingeblendet, wenn Screen kleiner als 600px*/
+  .landingPage h1 {
+    font-size: 2.0rem;
+    top: 20vh;
+    left: 8vh;
+  }
+  .landingPage h2{
+    font-size: 1.5rem;
+    top: 20vh;
+    left: 25vh;
   }
 }
