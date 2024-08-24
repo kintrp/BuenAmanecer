@@ -185,6 +185,11 @@ footer{
   padding: 0px 20px;
 }
 
+.forward i {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
 /* Shop */
 
 .select-button{
