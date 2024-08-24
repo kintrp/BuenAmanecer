@@ -22,12 +22,6 @@ h3{
   color: #2c2929;
 }
 
-h4{
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: #541818;
-}
-
 p{
   font-size: 1.2rem;
 }
@@ -43,7 +37,7 @@ p1{
 /* LandingPage */
 
 .landingPage {
-  background-image: url('./images/hintergrund.jpg');
+  background-image: url('./images/landingPic.jpg');
   background-size: cover;
   background-position: center;
   height: 75vh;
@@ -51,9 +45,8 @@ p1{
 
 .landingPage h1 {
   margin:0px;
-  width: 450px;
   position: relative;
-  top: 35vh;
+  top: 20vh;
   left: 30vh;
 }
 
@@ -61,8 +54,8 @@ p1{
   margin: 0px;
   width: 450px;
   position: relative;
-  top: 32vh;
-  left: 30vh;
+  top: 25vh;
+  left: 130vh;
 }
 
 /* Intro */
@@ -101,8 +94,8 @@ p1{
 }
 
 .categoryChild img{
-  width: 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
 }
 
 .categoryChild p{
@@ -119,6 +112,10 @@ p1{
 }
 
 .benificios h2{
+  text-align: center;
+}
+
+.benificios h3 {
   text-align: center;
 }
 
@@ -147,7 +144,7 @@ p1{
 }
 
 .shop-button{
-  background-color: #29a834;
+  background-color: #9a9696;
   padding: 15px 30px;
   font-size: 1.5rem;
   color:white;
@@ -188,7 +185,7 @@ footer{
 /* Shop */
 
 .select-button{
-  background-color: #29a834;
+  background-color: #9a9696;
   padding: 10px 20px;
   font-size: 1.5rem;
   color:white;
@@ -274,7 +271,7 @@ footer{
 }
 
 .pedido-button{
-  background-color: #29a834;
+  background-color: #9a9696;
   padding: 15px 30px;
   font-size: 1.5rem;
   color:white;
@@ -391,14 +388,14 @@ footer{
 @media (max-width: 1350px) {
   /* Um Richtung der Elemente zu ändern, wird Flex-Direction wird von waagrecht auf senkrecht gestellt*/
   .landingPage h1{
-    font-size: 7rem;
-    top: 35vh;
-    left: 15vh;
+    font-size: 5rem;
+    top: 20vh;
+    left: 25vh;
   }
   .landingPage h2{
-    font-size: 3rem;
-    top: 32vh;
-    left: 15vh;
+    font-size: 2.5rem;
+    top: 20vh;
+    left: 80vh;
   }
   .nosotrosBox{
     display: flex;
@@ -421,23 +418,23 @@ footer{
     flex-direction: column;
   }
   .landingPage h1{
-    font-size: 6rem;
-    top: 35vh;
-    left: 10vh;
+    font-size: 4rem;
+    top: 20vh;
+    left: 25vh;
   }
   .landingPage h2{
-    font-size: 2.75rem;
-    top: 32vh;
-    left: 10vh;
+    font-size: 2rem;
+    top: 20vh;
+    left: 60vh;
   }
   footer{
     flex-direction: column;
   }
 }
 
-/* Flex: Screen < 700 px */
+/* Flex: Screen < 850 px */
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   /* Hamburger-Menü eingeblendet, wenn Screen kleiner als 600px*/
   .toggleButton { 
       display: block;
@@ -457,14 +454,14 @@ footer{
     margin-top: 20px;
   }
   .landingPage h1 {
-    font-size: 4.5rem;
-    top: 40vh;
-    left: 3vh;
+    font-size: 3.5rem;
+    top: 5vh;
+    left: 10vh;
   }
   .landingPage h2{
-    font-size: 2.25rem;
-    top: 38vh;
-    left: 3vh;
+    font-size: 1.5rem;
+    top: 5vh;
+    left: 35vh;
   }
   .introBox{
     width: 75%;

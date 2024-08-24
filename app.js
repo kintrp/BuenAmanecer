@@ -1,5 +1,3 @@
-// Navbar
-
 const toggleButton = document.getElementsByClassName('toggleButton')[0];
 const navbarLinks = document.getElementsByClassName('navbarLinks')[0];
 
@@ -8,9 +6,10 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
 });
 
+
 // Filter
 
-function filterProducts(category) {
+/* function filterProducts(category) {
     // Alle Produkt-Elemente abrufen
     const productos = document.querySelectorAll('.product');
     
@@ -27,5 +26,6 @@ function filterProducts(category) {
         product.style.display = 'none';
       }
     });
-  }
+  } 
+    */
   
