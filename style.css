@@ -133,7 +133,7 @@ p1{
 
 /* Comprar */
 
-.comprar{
+.forward{
   display:flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +141,7 @@ p1{
   min-height: 70vh;
 }
 
-.comprar p {
+.forward p {
   text-align: center;
   padding: 10px 10px;
 }
@@ -361,7 +361,7 @@ footer{
   color: #9a9696;
   position: absolute;
   right: 4vh;
-  top: 3.2vh;
+  top: 4.5vh;
 }
 
 .navbar{
