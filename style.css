@@ -360,50 +360,50 @@ footer{
 
 /* Karussel */
 
-.fotos{
-  display: grid;
-  place-items: center;
-  margin-top: 5vh;
+.fotos {
+  width: 100%;
+  max-width: 600px; /* Maximale Breite des Karussells */
+  margin: 0 auto; /* Zentriere das Karussell auf der Seite */
+  position: relative; /* Positionierungsgrundlage für die Pfeile */
+  overflow: hidden; /* Überflüssiger Bildinhalt wird abgeschnitten */
+  margin-top: 10vh;
 }
 
 .carousel {
+  width: 100%;
   position: relative;
-  height: 600px;
-  width: 500px;
-  overflow: hidden;
-  border-radius: 10px;
 }
 
 .carousel-images {
-  display: flex;
+  display: flex; /* Bilder nebeneinander anordnen */
+  transition: transform 0.5s ease-in-out; /* Weiche Übergänge zwischen den Bildern */
 }
 
 .carousel-images img {
-  width: 100%;
-  border-radius: 10px;
+  width: 100%; /* Jedes Bild nimmt 100% der Karussellbreite ein */
+  flex-shrink: 0; /* Verhindert das Schrumpfen der Bilder */
+  object-fit: contain;
+  height: 600px;
 }
 
-#Xbut {
+.prev, .next {
   position: absolute;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
+  top: 50%; /* Positioniert die Pfeile in der Mitte des Karussells */
+  transform: translateY(-50%); /* Zentriert die Pfeile vertikal */
+  background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+  color: white; /* Pfeilfarbe */
+  font-size: 24px; /* Pfeilgröße */
   padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer; /* Zeigt den Zeiger als Hand an */
+  z-index: 1000; /* Hebt die Pfeile über andere Elemente */
 }
 
 .prev {
-  left: 10px;
+  left: 10px; /* Abstand vom linken Rand */
 }
 
 .next {
-  right: 10px;
+  right: 10px; /* Abstand vom rechten Rand */
 }
 
 /* Navbar */
@@ -542,6 +542,9 @@ button:hover {
 
 @media (max-width: 600px) {
   /* Hamburger-Menü eingeblendet, wenn Screen kleiner als 600px*/
+  .landingPage{
+    height: 65vh;
+  }
   .landingPage h1 {
     font-size: 2.0rem;
     top: 20vh;
@@ -552,15 +555,4 @@ button:hover {
     top: 20vh;
     left: 25vh;
   }
-  /*
-  .karousel{
-    width: 300px;
-    height: 400px;
-  }
-  
-  .logo{
-    height: 50px;
-    width: 50px;
-  }
-    */
 }
