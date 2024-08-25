@@ -358,7 +358,60 @@ footer{
   text-align: center;
 }
 
+/* Karussel */
+
+.fotos{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-images {
+  display: flex;
+}
+
+.carousel-images img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#Xbut {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
 /* Navbar */
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
 
 .owner{
   font-size: 2rem;
@@ -366,19 +419,20 @@ footer{
   color: #9a9696;
   position: absolute;
   right: 4vh;
-  top: 4.5vh;
+  top: 3.0vh;
 }
 
 .navbar{
   display:flex;
   flex-direction: column;
-  margin: 30px;
+  margin: 50px;
 }
 
 .navbarLinks a{
   padding: 14px 16px;
   color: #2c2929;
   font-size: 1.4rem;
+  margin-top: 15px;
   text-decoration: none; 
 }
 
