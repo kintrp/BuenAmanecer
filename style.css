@@ -361,7 +361,6 @@ footer{
 /* Karussel */
 
 .fotos {
-  width: 100%;
   max-width: 600px; /* Maximale Breite des Karussells */
   margin: 0 auto; /* Zentriere das Karussell auf der Seite */
   position: relative; /* Positionierungsgrundlage für die Pfeile */
@@ -370,13 +369,12 @@ footer{
 }
 
 .carousel {
-  width: 100%;
   position: relative;
 }
 
 .carousel-images {
   display: flex; /* Bilder nebeneinander anordnen */
-  transition: transform 0.5s ease-in-out; /* Weiche Übergänge zwischen den Bildern */
+  transition: transform 0.5s ease-in-out; 
 }
 
 .carousel-images img {
@@ -389,12 +387,10 @@ footer{
 .prev, .next {
   position: absolute;
   top: 50%; /* Positioniert die Pfeile in der Mitte des Karussells */
-  transform: translateY(-50%); /* Zentriert die Pfeile vertikal */
-  background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
-  color: white; /* Pfeilfarbe */
-  font-size: 24px; /* Pfeilgröße */
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  font-size: 24px; 
   padding: 10px;
-  cursor: pointer; /* Zeigt den Zeiger als Hand an */
   z-index: 1000; /* Hebt die Pfeile über andere Elemente */
 }
 
@@ -543,7 +539,7 @@ footer{
 @media (max-width: 600px) {
   /* Hamburger-Menü eingeblendet, wenn Screen kleiner als 600px*/
   .landingPage{
-    height: 65vh;
+    height: 70vh;
   }
   .landingPage h1 {
     font-size: 2.0rem;
