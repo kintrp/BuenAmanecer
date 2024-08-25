@@ -415,13 +415,13 @@ footer{
   color: #9a9696;
   position: absolute;
   right: 4vh;
-  top: 3.0vh;
+  top: 1vh;
 }
 
 .navbar{
   display:flex;
   flex-direction: column;
-  margin: 50px;
+  margin: 40px;
 }
 
 .navbarLinks a{
