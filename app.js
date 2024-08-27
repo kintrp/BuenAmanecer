@@ -64,4 +64,12 @@ showSlide(slideIndex);
     });
   } 
     */
+
+
+
+// Console.log
+
+let element = document.getElementsByClassName("h1");
+console.log(element);
+element.innerHtml="Idiot";
   
