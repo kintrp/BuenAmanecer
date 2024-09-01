@@ -356,8 +356,9 @@ footer{
 
 .locationBox {
   display: flex;
+  flex-direction: column;
   color: black;
-  padding: 40px 50px;
+  padding: 10px 50px;
 }
 
 /* Karussel */
