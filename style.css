@@ -94,16 +94,12 @@ p1{
   text-align: center;
   margin: 5vh;
   font-size: 1.5rem;
+  overflow: hidden;
 }
 
 .categoryChild img{
-  width: 200px;
-  height: 300px;
-}
-
-#mateHorizontal{
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 500px;
 }
 
 .categoryChild p{
@@ -167,27 +163,14 @@ footer{
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 120px;
+  height: 80px;
   background-color: #2c2929;
   padding: 10px;
 }
 
 .icon{
   color: white;
-}
-
-.footerBox {
-  color: white;
-}
-
-#footerBox-Contact{
-  display:flex;
-  flex-direction: row;
-}
-
-#footerBox-Contact i{
-  font-size: 1.5rem;
-  padding: 0px 20px;
+  font-size: 2rem;
 }
 
 .forward i {
@@ -353,6 +336,7 @@ footer{
 
 .location{
   width: 100%;
+  margin-top: 15vh;
 }
 
 .location h3{
@@ -361,6 +345,19 @@ footer{
 
 .location p{
   text-align: center;
+}
+
+.location-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color:black;
+}
+
+.locationBox {
+  display: flex;
+  color: black;
+  padding: 40px 50px;
 }
 
 /* Karussel */
@@ -487,9 +484,6 @@ footer{
     font-size: 2rem;
     top: 20vh;
     left: 60vh;
-  }
-  footer{
-    flex-direction: column;
   }
 }
 
