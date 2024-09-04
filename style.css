@@ -162,36 +162,42 @@ p1{
 
 /* Footer */
 
-footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 80px;
-  background-color: #2c2929;
-  padding: 10px;
-  margin-top: 50px;
-}
-
 .forward i {
   font-size: 7rem;
   font-weight: 900;
 }
 
-.scroll-Up{
-  display: none;
-  place-items: center; 
-  position: fixed;
-  top: 50%;
-  left: 5vh;
+footer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
 }
 
-.scroll-Up i {
-  font-size: 2rem;
-}
-
-.scroll-Up p{
+#scrollUp{
+  text-align: center;
   font-size: 10px;
+  border-radius: 10px;
+  background-color: #9a9696;
+  color:black;
+  margin: 50px 0px;
+  padding: 5px 35px;
+}
+
+#scrollUp a{
+  color:black;
+  text-decoration: none; 
+}
+
+.footerBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  background-color:#2c2929;
+  padding: 10px;
+  width: 100%;
 }
 
 .icon{
@@ -307,51 +313,46 @@ footer{
 }
 
 .faq-container {
-  max-width: 600px;
-  margin: 50px auto;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
 .faq-item {
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
 .faq-question {
   width: 100%;
-  background: none;
-  border: none;
-  padding: 20px;
+  padding: 10px;
   text-align: left;
-  font-size: 16px;
-  font-weight: bold;
+  border: none;
   cursor: pointer;
-  outline: none;
-  position: relative;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color:black;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .faq-answer {
-  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  padding: 0 10px;
+  color: black;
 }
 
 .faq-answer p {
-  padding: 0 20px 20px;
-  margin: 0;
+  margin: 10px 0;
 }
 
-.faq-question span {
-  transition: transform 0.3s ease;
-}
-
-.faq-question.active span {
-  transform: rotate(45deg); 
+.faq-item.active .faq-answer {
+  max-height: 100px; /* Anpassen je nach Inhalt */
 }
 
 /* nosotros */
@@ -382,6 +383,10 @@ footer{
   max-width: 100%; 
   height: auto; 
   margin: 0 auto;
+}
+
+.nosotrosText p {
+  text-align: justify;
 }
 
 /* Values */

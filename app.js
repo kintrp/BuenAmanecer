@@ -8,13 +8,18 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
 });
 
-// Karussel
-
+// Karussell
 let slideIndex = 0;
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-images img');
     const totalSlides = slides.length;
+    const carouselImages = document.querySelector('.carousel-images');
+
+    if (!carouselImages) {
+        console.error('Element mit der Klasse .carousel-images wurde nicht gefunden.');
+        return;
+    }
 
     if (index >= totalSlides) {
         slideIndex = 0;
@@ -25,7 +30,7 @@ function showSlide(index) {
     }
 
     const offset = -slideIndex * 100;
-    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+    carouselImages.style.transform = `translateX(${offset}%)`;
 }
 
 function nextSlide() {
@@ -36,78 +41,37 @@ function prevSlide() {
     showSlide(slideIndex - 1);
 }
 
-// Start with the first slide
-showSlide(slideIndex);
+document.addEventListener('DOMContentLoaded', () => {
+    // Start with the first slide
+    showSlide(slideIndex);
 
+    // Event-Listener für die Karussell-Steuerung hinzufügen
+    const nextButton = document.querySelector('.next');
+    const prevButton = document.querySelector('.prev');
 
-// FAQ
+    if (nextButton) {
+        nextButton.addEventListener('click', nextSlide);
+    }
 
-document.querySelectorAll('.faq-question').forEach((question) => {
-  question.addEventListener('click', () => {
-      // Toggle 'active' class on the clicked question
-      question.classList.toggle('active');
+    if (prevButton) {
+        prevButton.addEventListener('click', prevSlide);
+    }
 
-      // Get the associated answer div
-      const answer = question.nextElementSibling;
+    // FAQ
+    document.querySelectorAll('.faq-question').forEach((question) => {
+        question.addEventListener('click', () => {
+            console.log("question clicked");
 
-      // Toggle the visibility of the answer
-      if (answer.style.maxHeight) {
-          // Collapse the answer
-          answer.style.maxHeight = null;
-          question.querySelector('span').textContent = '+'; // Set symbol to '+'
-      } else {
-          // Expand the answer
-          answer.style.maxHeight = answer.scrollHeight + 'px';
-          question.querySelector('span').textContent = '×'; // Set symbol to '×'
-      }
-  });
-});
+            question.classList.toggle('active');
+            const answer = question.nextElementSibling;
 
-// Scroll
-
-/*
-
-window.addEventListener('scroll', () => {
-  const floatingDiv = document.getElementsByClassName('scroll-Up');
-  const scrollPosition = window.scrollY; // Liefert die aktuelle vertikale Scroll-Position der Y-Achse.
-
-  //console.log(floatingDiv);
-
-  if (scrollPosition > window.innerHeight) { // Überprüft, ob die Scroll-Position größer als die Höhe des Viewports (100vh) ist
-      floatingDiv.style.opacity = 1;  
-  } else {
-      floatingDiv.style.opacity = 0; 
-  }
-});
-
-*/
-
-
-
-
-
-
-
-// Filter
-
-/* function filterProducts(category) {
-    // Alle Produkt-Elemente abrufen
-    const productos = document.querySelectorAll('.product');
-    
-    // Über alle Produkte iterieren
-    productos.forEach(product => {
-      if (category === 'alle') {
-        // Alle Produkte anzeigen
-        product.style.display = 'flex';
-      } else if (product.classList.contains(category)) {
-        // Produkte der ausgewählten Kategorie anzeigen
-        product.style.display = 'flex';
-      } else {
-        // Andere Produkte ausblenden
-        product.style.display = 'none';
-      }
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                question.querySelector('span').textContent = '+';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                question.querySelector('span').textContent = '×';
+            }
+        });
     });
-  } 
-    */
-
-  
+});

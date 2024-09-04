@@ -20,7 +20,7 @@
             <a href="nosotros.html">Nosotros</a>
         </div>
         <div class="owner">
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.png" class="logo" id="top">
         </div>
     </div>
 
@@ -32,7 +32,7 @@
     <div class ="intro">
         <h3>¡Bienvenido a nuestro sitio web!</h3>
         <div class ="introBox">
-            <p>BUEN AMANECER es una yerba mate nacida y criada en Misiones, Argentina. Para preservar su origen único, cada paso desde el cultivo hasta el envasado se realiza localmente, sin aditivos ni adulteraciones para lograr una molienda media/fina. La yerba mate BUEN AMANECER tiene un menor contenido de polvo y palo, lo que le da su sabor agradable. Ademas dura mucho y no da acidez; el tiempo de estacionamiento es de 14 meses.</p>
+            <p>BUEN AMANECER es una yerba mate nacida y criada en Misiones, Argentina. Para preservar su origen único, cada paso desde el cultivo hasta el envasado se realiza localmente, sin aditivos ni adulteraciones para lograr una molienda media/fina. La yerba mate BUEN AMANECER tiene un menor contenido de polvo y palo, lo que le da su sabor agradable, (...) dura mucho y no da acidez; el tiempo de estacionamiento es de 14 meses.</p>
         </div>
     </div>
 
@@ -40,10 +40,15 @@
         <div class="carousel">
             <div class="carousel-images">
                 <img src="images/galeria3.jpg" alt="Image 1">
-                <img src="images/galeria2.jpg" alt="Image 2">
+                <img src="images/10k.jpg" alt="Image 2">
+                <img src="images/galiera4.jpg" alt="Image 3">
             </div>
+            <!--
             <div class="prev" onclick="prevSlide()">&#10094;</div>
             <div class="next" onclick="nextSlide()">&#10095;</div>
+            -->
+            <div class="prev" >&#10094;</div>
+            <div class="next" >&#10095;</div>
         </div>    
     </div>
 
@@ -78,20 +83,20 @@
             <div class="categoryChild">
                 <img src="images/mate.png" alt="mate">
                 <p>1/2 Kilo</p>
-                <p1>Precio: $ 1.000</p1>
+                <p1>Precio: $ 2.500</p1>
             </div>
             <div class="categoryChild">
                 <img src="images/mate.png" alt="mate">
                 <img src="images/mate.png" alt="mate">
                 <p>1 Kilo</p>
-                <p1>Precio: $ 2.000</p1>
+                <p1>Precio: $ 4.500</p1>
             </div>
             <div class="categoryChild">
                 <img src="images/mate.png" alt="mate">
                 <img src="images/mate.png" alt="mate">
                 <img src="images/mate.png" alt="mate">
                 <p>10 Kilo</p>
-                <p1>Precio: $ 20.000</p1>
+                <p1>Precio: $ 40.000</p1>
             </div>
         </div>
     </div>
@@ -116,10 +121,16 @@
             <i class="fa-solid fa-arrow-right" onclick="location.href='pedido.html'"></i> 
     </div>
 
-    <footer>
+    <footer> 
+        <div id="scrollUp">
+            <a href="#top">Volver arriba</a>
+        </div>
+
+        <div class ="footerBox">
             <a href="tel:+5493855814364" class="icon" aria-label="Anrufen"><i class="fa-solid fa-phone"></i></a>
             <a href="sms:+5493855814364" class="icon" aria-label="SMS senden"><i class="fa-regular fa-comment"></i></a>
             <a href="https://wa.me/5493855814364" class="icon" aria-label="Mit WhatsApp chatten" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
     </footer>
    
     <script src="app.js"></script>
