@@ -8,8 +8,6 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
 });
 
-
-
 // Karussel
 
 let slideIndex = 0;
@@ -42,6 +40,53 @@ function prevSlide() {
 showSlide(slideIndex);
 
 
+// FAQ
+
+document.querySelectorAll('.faq-question').forEach((question) => {
+  question.addEventListener('click', () => {
+      // Toggle 'active' class on the clicked question
+      question.classList.toggle('active');
+
+      // Get the associated answer div
+      const answer = question.nextElementSibling;
+
+      // Toggle the visibility of the answer
+      if (answer.style.maxHeight) {
+          // Collapse the answer
+          answer.style.maxHeight = null;
+          question.querySelector('span').textContent = '+'; // Set symbol to '+'
+      } else {
+          // Expand the answer
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          question.querySelector('span').textContent = '×'; // Set symbol to '×'
+      }
+  });
+});
+
+// Scroll
+
+/*
+
+window.addEventListener('scroll', () => {
+  const floatingDiv = document.getElementsByClassName('scroll-Up');
+  const scrollPosition = window.scrollY; // Liefert die aktuelle vertikale Scroll-Position der Y-Achse.
+
+  //console.log(floatingDiv);
+
+  if (scrollPosition > window.innerHeight) { // Überprüft, ob die Scroll-Position größer als die Höhe des Viewports (100vh) ist
+      floatingDiv.style.opacity = 1;  
+  } else {
+      floatingDiv.style.opacity = 0; 
+  }
+});
+
+*/
+
+
+
+
+
+
 
 // Filter
 
@@ -65,11 +110,4 @@ showSlide(slideIndex);
   } 
     */
 
-
-
-// Console.log
-
-let element = document.getElementsByClassName("h1");
-console.log(element);
-element.innerHtml="Idiot";
   
