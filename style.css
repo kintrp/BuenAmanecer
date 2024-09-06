@@ -82,7 +82,7 @@ p1{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vh;
+  margin: 5vh 0vh;
 }
 
 .categories p {
@@ -182,31 +182,28 @@ footer{
 }
 
 .footerBox{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 80px;
-  background-color:#2c2929;
-  padding: 10px;
-  width: 100%;
-}
-
-.box{
-  display: grid;
-  place-items: center; 
-  width: 100px;
   height: 50px;
-}
-
-.footerBox div:focus{
-  background-color: #ddd;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: antiquewhite;
+  gap: 5px;
 }
 
 .icon{
-  color: white;
-  font-size: 2rem;
+  display: grid;
+  place-items: center; 
+  background-color:#2c2929;
+  text-decoration: none;
   outline: none;
+  box-shadow: none;
+  border: none; 
+  color:white;
+  font-size: 2rem;
+}
+
+.icon:focus{
+  background-color: black;
 }
 
 /* Shop */
