@@ -176,8 +176,6 @@ p1{
   padding: 10px 10px;
 }
 
-/* Footer */
-
 .forward i {
   font-size: 7rem;
   font-weight: 900;
@@ -186,6 +184,8 @@ p1{
   box-shadow: none;
   border: none; 
 }
+
+/* Footer */
 
 footer{
   display:flex;
