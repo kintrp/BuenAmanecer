@@ -552,9 +552,9 @@ footer{
 
 .carousel-images img {
   width: 100%; /* Jedes Bild nimmt 100% der Karussellbreite ein */
-  flex-shrink: 0; /* Verhindert das Schrumpfen der Bilder */
+  flex-shrink: 0; /* Verhindert das Schrumpfen der Bilder    */
   object-fit: contain;
-  height: 600px;
+  /*height: 600px;*/
 }
 
 .prev, .next {
