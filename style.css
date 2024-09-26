@@ -41,7 +41,7 @@ p1{
 /* LandingPage */
 
 .landingPage {
-  background-image: url('./images/landingPic.webp');
+  background-image: url('./images/t_landingPic.webp');
   background-size: cover;
   background-position: center;
   height: 75vh;
