@@ -44,6 +44,7 @@ p1{
   background-image: url('./images/t_landingPic.webp');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat; 
   height: 75vh;
 }
 
