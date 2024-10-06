@@ -75,3 +75,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.getElementById('contactForm').addEventListener('submit', async function (event) {
+    event.preventDefault(); // Verhindert das Neuladen der Seite
+    const formData = new FormData(this);
+    
+    try {
+        const response = await fetch('send_email.php', {
+            method: 'POST',
+            body: formData
+        });
+        
+        const result = await response.text();
+        
+        let responseMessage = document.getElementById('responseMessage');
+        if (result === 'success') {
+            responseMessage.innerHTML = '¡Correo enviado con éxito!';
+            responseMessage.style.color = 'green';
+        } else {
+            responseMessage.innerHTML = 'Hubo un error al enviar el correo.';
+            responseMessage.style.color = 'red';
+        }
+        responseMessage.style.display = 'block';
+    } catch (error) {
+        document.getElementById('responseMessage').innerHTML = 'Error al conectar con el servidor.';
+        document.getElementById('responseMessage').style.color = 'red';
+        document.getElementById('responseMessage').style.display = 'block';
+    }
+});

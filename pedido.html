@@ -35,11 +35,9 @@
     
     <div class="pedidos">
         <h3>Pedidos</h3>
-        <p>Dejanos saber lo que vas a pedir a traves del formulario</p>    
-        <form action="https://formsubmit.co/65410b35cfda0f754b477174e17fa567" method="post" class="contact-form">
-
+        <p>Dejanos saber lo que vas a pedir a traves del formulario</p>
+        <form id="contactForm" class="contact-form">
             <div class="info-Client">
-
                 <div class="clientDetails">
                     <div class="form-group">
                         <label for="firstname">Nombre</label><br>
@@ -50,7 +48,7 @@
                         <input type="text" id="lastname" name="lastname" required>
                     </div>
                 </div>
-                <div class ="InfoX">
+                <div class="InfoX">
                     <div class="form-group">
                         <label for="email">Email</label><br>
                         <input type="email" id="email" name="email" required>
@@ -60,18 +58,15 @@
                         <input type="tel" id="phone" name="phone" required>
                     </div>
                 </div>
-
             </div>
-                    
             <div class="info-Pedido">
                 <label for="message">Tu pedido</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-
             <div class="subtmitDIV">
                 <button class="pedido-button" type="submit">Enviar</button>
             </div>
-
+            <div id="responseMessage" style="display:none;"></div>
         </form>
     </div>
 

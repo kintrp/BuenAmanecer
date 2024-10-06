@@ -7,4 +7,3 @@
   ExpiresByType image/webp "access plus 1 year"
 </IfModule>
 
-Redirect 301 /index.html https://buenamanecer.com.ar/
